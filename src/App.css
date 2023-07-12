@@ -92,12 +92,50 @@
     padding-bottom: 20px;
   }
 
-.filter-options {
-  display: flex;
-  justify-content: space-between;
-  gap: 3rem;
-}
+  .filter-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
 
-.filter-options div {
-  flex: 1 1 0;
-}
+  .filter-options div {
+    flex: 1 1 0;
+  }
+
+  @media(max-width: 768px) {
+
+    button {
+      font-size: 15px;
+    }
+
+    .complete,
+    .remove {
+      display: flex;
+      margin-bottom: 5px;
+    }
+
+    .todo-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .todo-form h2 {
+      text-align: center;
+    }
+
+    .center-button {
+      margin-top: 10px;
+    }
+
+
+    .search h2 {
+      text-align: center;
+    }
+  }
+
+  @media(min-width: 360px) {
+    .button-filter {
+      margin-bottom: 5px;
+    }
+  }
